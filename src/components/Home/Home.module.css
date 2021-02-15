@@ -24,18 +24,34 @@
     margin-top: 60px !important;
 }
 
+.Img {
+    border-radius: 120px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .Hov {
-    box-shadow: 0 0 7px rgba(33,33,33,.2) !important;
+    box-shadow: 0 0 7px rgba(33, 33, 33, 0.2) !important;
     transition: box-shadow 0.2s ease-in-out 0s;
 }
 
-.Hov:hover{
-    box-shadow: 0 0 16px rgba(33,33,33,.2) !important;
+.Hov:hover {
+    box-shadow: 0 0 16px rgba(33, 33, 33, 0.2) !important;
+}
+
+.Mobile {
+    text-align: center;
 }
 
 @media (min-width: 992px) {
     .Size {
         max-width: 90%;
     }
-}
 
+    .Mobile {
+        text-align: left;
+    }
+}

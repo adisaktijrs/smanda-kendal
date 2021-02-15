@@ -29,7 +29,7 @@
 
 .Head {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 200px;
 }
 
@@ -44,6 +44,10 @@
 @media (min-width: 992px) {
     .Size {
         max-width: 90%;
+    }
+
+    .Head {
+        font-size: 4rem;
     }
 }
 
