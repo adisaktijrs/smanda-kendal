@@ -1,0 +1,47 @@
+.Toggle {
+    border: none !important;
+    font-size: 2rem;
+}
+
+.BorderTop {
+    border-bottom: 3px solid #24abee;
+
+}
+
+.BorderRight {
+    border-right: 1px solid white;
+}
+
+.Title {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0 0 0 4px;
+    font-size: 1.2rem;
+    margin-left: 55px;
+}
+
+.Top {
+    position: absolute;
+    top: 10px;
+}
+
+.Bottom {
+    position: absolute;
+    top: 28px;
+}
+
+/* @media (min-width: 992px) {
+    .Title {
+        padding: 0 0 0 4px;
+        font-size: 2rem;
+        margin-left: 80px;
+    }
+
+    .Top {
+        top: 20px;
+    }
+
+    .Bottom {
+        top: 52px;
+    }
+} */

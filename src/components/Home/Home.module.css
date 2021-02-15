@@ -1,0 +1,41 @@
+.Size {
+    max-width: 100%;
+}
+
+.Dots {
+    border-bottom: dotted 3px #24abee;
+    max-width: 220px;
+    margin: auto;
+}
+
+.CardImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Bg {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.MarginTop {
+    margin-top: 60px !important;
+}
+
+.Hov {
+    box-shadow: 0 0 7px rgba(33,33,33,.2) !important;
+    transition: box-shadow 0.2s ease-in-out 0s;
+}
+
+.Hov:hover{
+    box-shadow: 0 0 16px rgba(33,33,33,.2) !important;
+}
+
+@media (min-width: 992px) {
+    .Size {
+        max-width: 90%;
+    }
+}
+
