@@ -8,7 +8,7 @@ const Home = () => {
     let articles = data.slice(0, 3).map((post) => {
         return (
             <Col sm={4} className="mt-4" key={post.id}>
-                <Link to={"/post/" + post.id}>
+                <Link to={"/post/" + post.id} className={styles.HovText}>
                     <Card border="light" className={`${styles.Hov}`}>
                         <Card.Img
                             className={styles.CardImg}
@@ -16,9 +16,9 @@ const Home = () => {
                             src={post.img}
                         />
                         <Card.Body>
-                            <Card.Title className="font-weight-bold">{post.judul}</Card.Title>
+                            <Card.Title className="font-weight-bold text-dark">{post.judul}</Card.Title>
                             <p className="card-text">
-                                <small className="text-muted">
+                                <small className={`text-muted`}>
                                     {post.tanggal}
                                 </small>
                             </p>

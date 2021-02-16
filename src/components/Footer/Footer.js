@@ -14,8 +14,8 @@ const Footer = () => {
         <Container fluid className={`bg-dark pt-4 ${styles.Full}`}>
             <Row className={`text-light mx-auto ${styles.Size}`}>
                 <Col className={`${styles.FullCol}`}>
-                    <Row className="pb-4">
-                        <Col className="mb-4" sm={4}>
+                    <Row className="mb-3" style={{borderBottom: "1px solid #fff"}}>
+                        <Col sm={4}>
                             <Row className="mt-3">
                                 <Col xs={4}>
                                     <img
@@ -25,7 +25,7 @@ const Footer = () => {
                                     />
                                 </Col>
                                 <Col>
-                                    <h3>SMA Negeri 2 Kendal</h3>
+                                    <h3 className="font-weight-bold">SMA Negeri 2 Kendal</h3>
                                 </Col>
                             </Row>
                             <Row>
@@ -86,6 +86,13 @@ const Footer = () => {
                                     @sman2kendal
                                 </a>
                             </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="text-center">
+                        <p>Made with ❤️ by <a className="text-info" href="https://adisaktijrs.github.io/" target="_blank" rel="noreferrer">@adisaktijrs</a> </p>
+                        <p className="mb-0"><small>Sebagian konten web ini berisikan infomasi 'dummy' atau bukan asli.</small></p>
+                        <p><small>Web ini merupakan redesign dari web sekolah yang saya gunakan untuk keperluan saya belajar React dan React-Router.</small></p>
                         </Col>
                     </Row>
                 </Col>

@@ -39,7 +39,11 @@
 }
 
 .Hov:hover {
-    box-shadow: 0 0 16px rgba(33, 33, 33, 0.2) !important;
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.3) !important;
+}
+
+.HovText:hover {
+    text-decoration: none !important;
 }
 
 .Mobile {

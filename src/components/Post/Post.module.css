@@ -1,0 +1,123 @@
+.Size {
+    max-width: 100%;
+}
+
+.Dots {
+    border-bottom: dotted 3px #24abee;
+    max-width: 220px;
+    margin: auto;
+}
+
+.CardImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Bg {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.MarginTop {
+    margin-top: 60px !important;
+}
+
+.Fill {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 300px;
+    padding: auto 0;
+    background-color: #000;
+}
+
+.Fill img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.Hov {
+    box-shadow: 0 0 7px rgba(33, 33, 33, 0.2) !important;
+    transition: box-shadow 0.2s ease-in-out 0s;
+}
+
+.Hov:hover {
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.2) !important;
+}
+
+.HovText:hover {
+    text-decoration: none !important;
+}
+
+.Mobile {
+    text-align: center;
+}
+
+.Title {
+    position: absolute;
+    top: 250px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .Size {
+        max-width: 90%;
+    }
+
+    .Mobile {
+        text-align: left;
+    }
+
+    .Fill {
+        align-items: center;    
+    }
+}
+
+/* Animation */
+
+@keyframes FadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes FadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.Animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.AnimatedFadeInUp {
+    opacity: 0;
+}
+
+.FadeInUp {
+    opacity: 0;
+    animation-name: FadeInUp;
+    -webkit-animation-name: FadeInUp;
+}

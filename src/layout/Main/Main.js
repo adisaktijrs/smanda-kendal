@@ -4,7 +4,8 @@ import Profil from "../../components/Profil/Profil";
 import Visi from "../../components/Visi/Visi";
 import Hubungi from "../../components/Hubungi/Hubungi";
 import Header from "../../layout/Header/Header";
-
+import Post from "../../components/Post/Post";
+import NotFound from "../../components/404/NotFound";
 
 const Main = (props) => {
     return (
@@ -24,7 +25,10 @@ const Main = (props) => {
                     <Hubungi />
                 </Route>
                 <Route path="/post/:id">
-                    <Hubungi />
+                    <Post />
+                </Route>
+                <Route path="*">
+                    <NotFound />
                 </Route>
             </Switch>
         </>

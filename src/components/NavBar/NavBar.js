@@ -1,21 +1,28 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import React, {useState} from "react";
 
 
 import logo from "../../assets/img/smanda.png";
 import styles from "./NavBar.module.css";
 
 const NavBar = () => {
-    // let imgSize = window.innerWidth > 991 ? 60 : 40;
+    const [openToggle, setOpenToggle] = useState(false);
+
+    const toggleHandler =() => setOpenToggle(!openToggle);
+    const closeNavHandler =() => setOpenToggle(false);
+
     return (
         <Navbar
             bg="white"
             expand="lg"
             className={`pt-2 ${styles.BorderTop}`}
             variant="light"
+            expanded={openToggle}
+            sticky="top"
         >
             <Link to="/">
-                <Navbar.Brand>
+                <Navbar.Brand onClick={closeNavHandler}>
                     <img
                         src={logo}
                         height={40}
@@ -34,18 +41,19 @@ const NavBar = () => {
             </Link>
 
             <Navbar.Toggle
+                onClick={toggleHandler}
                 className={styles.Toggle}
                 aria-controls="basic-navbar-nav"
             />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto font-weight-bold">
-                    <Link className="pr-3 text-muted" to="/profil">
+                    <Link className="pr-3 text-muted" to="/profil" onClick={closeNavHandler}>
                         Profil
                     </Link>
-                    <Link className="pr-3 text-muted" to="/visi">
+                    <Link className="pr-3 text-muted" to="/visi" onClick={closeNavHandler}>
                         Visi & Misi
                     </Link>
-                    <Link className="pr-3 text-muted" to="/hubungi">
+                    <Link className="pr-3 text-muted" to="/hubungi" onClick={closeNavHandler}>
                         Hubungi Kami
                     </Link>
                 </Nav>
