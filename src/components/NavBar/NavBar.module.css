@@ -3,25 +3,36 @@
     font-size: 2rem;
 }
 
-.BorderTop {
-    border-bottom: 3px solid #24abee;
+.BlurBackground {
+    background: rgba(255, 255, 255, 0.6) !important;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+}
+
+.Black {
+    color: #343a40;
 }
 
 .BorderRight {
-    border-right: 1px solid white;
+    border-right: 1px solid #343a40;
 }
 
 .Title {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     padding: 0 0 0 4px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 55px;
+    color: #343a40;
 }
 
 .Top {
     position: absolute;
-    top: 10px;
+    top: 13px;
+}
+
+.CenterNavItem {
+    text-align: center;
 }
 
 .Bottom {

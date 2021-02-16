@@ -30,7 +30,7 @@ const Footer = () => {
                             </Row>
                             <Row>
                                 <Col>
-                                    <p>Menjadikan Sekolah Bersih dan Sehat.</p>
+                                    <p className="text-center">Menjadikan Sekolah Bersih dan Sehat.</p>
                                 </Col>
                             </Row>
                         </Col>
@@ -38,13 +38,13 @@ const Footer = () => {
                             <p className="font-weight-bold text-center">
                                 Hubungi Kami
                             </p>
-                            <p className="mb-0 pb-0">
+                            <p className={`mb-0 pb-0 ${styles.LeftMar}`}>
                                 <FaPhoneAlt /> Telepon: 02943811028
                             </p>
-                            <p className="mb-0 pb-0">
+                            <p className={`mb-0 pb-0 ${styles.LeftMar}`}>
                                 <HiMailOpen /> Email: smanda.kendal@gmail.com
                             </p>
-                            <p className="mb-0 pb-0">
+                            <p className={`mb-0 pb-0 ${styles.LeftMar}`}>
                                 <HiLocationMarker /> Alamat: Jl. Kyai Tulus,
                                 Jetis, Kendal
                             </p>
@@ -53,7 +53,7 @@ const Footer = () => {
                             <p className="font-weight-bold text-center">
                                 Ikuti Kami
                             </p>
-                            <p className="mb-0 pb-0">
+                            <p className={`mb-0 pb-0 ${styles.LeftMar}`}>
                                 <FaFacebookSquare /> Facebook:{" "}
                                 <a
                                     className="text-info"
@@ -64,7 +64,7 @@ const Footer = () => {
                                     SMA Negeri 2 Kendal
                                 </a>
                             </p>
-                            <p className="mb-0 pb-0">
+                            <p className={`mb-0 pb-0 ${styles.LeftMar}`}>
                                 <FaTwitter /> Twitter:{" "}
                                 <a
                                     className="text-info"
@@ -75,7 +75,7 @@ const Footer = () => {
                                     @sman2kendal
                                 </a>
                             </p>
-                            <p className="mb-0 pb-0">
+                            <p className={`mb-0 pb-0 ${styles.LeftMar}`}>
                                 <FaInstagram /> Instagram:{" "}
                                 <a
                                     className="text-info"
@@ -91,8 +91,8 @@ const Footer = () => {
                     <Row>
                         <Col className="text-center">
                         <p>Made with ❤️ by <a className="text-info" href="https://adisaktijrs.github.io/" target="_blank" rel="noreferrer">@adisaktijrs</a> </p>
-                        <p className="mb-0"><small>Sebagian konten web ini berisikan infomasi 'dummy' atau bukan asli.</small></p>
-                        <p><small>Web ini merupakan redesign dari web sekolah yang saya gunakan untuk keperluan saya belajar React dan React-Router.</small></p>
+                        <p className="mb-0"><small>Sebagian konten web ini berisikan informasi 'dummy' atau bukan asli.</small></p>
+                        <p><small>Web ini merupakan redesign dari web sekolah yang saya gunakan untuk keperluan belajar React dan React-Router.</small></p>
                         </Col>
                     </Row>
                 </Col>

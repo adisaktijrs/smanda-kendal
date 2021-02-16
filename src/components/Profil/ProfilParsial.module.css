@@ -1,0 +1,24 @@
+.DivImg {
+    max-width: 100%;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.DivImg img {
+    height: 100%;
+}
+
+.PaddingDiv {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (min-width: 992px) {
+    .PaddingDiv {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

@@ -14,9 +14,8 @@ const NavBar = () => {
 
     return (
         <Navbar
-            bg="white"
             expand="lg"
-            className={`pt-2 ${styles.BorderTop}`}
+            className={`pt-2 ${styles.BlurBackground}`}
             variant="light"
             expanded={openToggle}
             sticky="top"
@@ -25,7 +24,7 @@ const NavBar = () => {
                 <Navbar.Brand onClick={closeNavHandler}>
                     <img
                         src={logo}
-                        height={40}
+                        height={35}
                         className={`d-inline-block align-top pr-2 ${styles.BorderRight}`}
                         alt="React Bootstrap logo"
                     />
@@ -47,13 +46,13 @@ const NavBar = () => {
             />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto font-weight-bold">
-                    <Link className="pr-3 text-muted" to="/profil" onClick={closeNavHandler}>
+                    <Link className={`pr-3 ${styles.Black} ${styles.CenterNavItem}`} to="/profil" onClick={closeNavHandler}>
                         Profil
                     </Link>
-                    <Link className="pr-3 text-muted" to="/visi" onClick={closeNavHandler}>
+                    <Link className={`pr-3 ${styles.Black} ${styles.CenterNavItem}`} to="/visi" onClick={closeNavHandler}>
                         Visi & Misi
                     </Link>
-                    <Link className="pr-3 text-muted" to="/hubungi" onClick={closeNavHandler}>
+                    <Link className={`pr-3 ${styles.Black} ${styles.CenterNavItem}`} to="/hubungi" onClick={closeNavHandler}>
                         Hubungi Kami
                     </Link>
                 </Nav>
