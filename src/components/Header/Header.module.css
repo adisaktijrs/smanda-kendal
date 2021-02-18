@@ -1,12 +1,29 @@
 /* <span>Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/school-building?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
 .Bg {
-    background-image: url(../../assets/img/profil.jpg);
+    background-image: url(../../assets/img/school.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 550px;
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.BgTop {
+    background-image: radial-gradient(
+            circle 5px at top left,
+            rgba(92, 212, 241, 0.2) 0%,
+            rgba(144, 219, 238, 0.3) 50%,
+            rgba(204, 28, 28, 0.1) 50%,
+            rgba(204, 28, 28, 0.1) 30%,
+            transparent 30%,
+            transparent 50%
+        ),
+        linear-gradient(90deg, rgba(199, 117, 117, 0), rgba(199, 117, 117, 0));
+    background-size: 11px 11px;
+    background-repeat: repeat;
+    animation: slide 20s linear infinite;
+    height: 550px;
 }
 
 .Head {
@@ -19,13 +36,26 @@
     margin-bottom: 150px;
 }
 
-.TitleFont {
-    font-family: "Roboto Condensed", sans-serif;
+.Size {
+    max-width: 100%;
 }
 
 @media (min-width: 992px) {
+    .Size {
+        max-width: 90%;
+    }
+
     .Head {
         font-size: 4rem;
+    }
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -200px;
     }
 }
 

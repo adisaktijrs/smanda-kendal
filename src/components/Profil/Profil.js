@@ -18,17 +18,26 @@ const Profil = () => {
 
     return (
         <>
-            <div className={styles.Bg}>
-                <Container fluid className={`${styles.Size}`}>
+            <div className={`mb-5 ${styles.Bg}`}>
+                <Container>
                     <Row className="pt-4 text-light">
                         <Col className={`${styles.Bottom}`}>
                             <h1
-                                className={`${styles.Head} ${styles.Animated} ${styles.AnimatedFadeInUp} ${styles.FadeInUp}`}
+                                className={`
+                                ${styles.Head} 
+                                ${styles.Animated} 
+                                ${styles.AnimatedFadeInUp} 
+                                ${styles.FadeInUp}`}
                             >
                                 Profil
                             </h1>
                             <h1
-                                className={`font-weight-bold ${styles.AnimatedChild} ${styles.AnimatedFadeInUp} ${styles.FadeInUp} ${styles.TitleFont}`}
+                                className={`
+                                font-weight-bold 
+                                ${styles.AnimatedChild} 
+                                ${styles.AnimatedFadeInUp} 
+                                ${styles.FadeInUp} 
+                                ${styles.TitleFont}`}
                             >
                                 SMA Negeri 2 Kendal
                             </h1>
@@ -37,13 +46,11 @@ const Profil = () => {
                 </Container>
             </div>
             {profilParsial}
-            <div className="bg-secondary">
-                <Container>
-                    <p className="mb-0 pb-2 pt-2 pl-2 pr-2 text-center text-light">
-                        <small>*sumber gambar dari Unsplash</small>
-                    </p>
-                </Container>
-            </div>
+            <Container>
+                <p className="mb-0 pb-3 pt-2 pr-2 text-dark">
+                    <small>*sumber gambar dari Unsplash</small>
+                </p>
+            </Container>
         </>
     );
 };

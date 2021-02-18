@@ -11,14 +11,20 @@
     height: 100%;
 }
 
-.PaddingDiv {
-    padding-left: 5%;
-    padding-right: 5%;
+.PaddingLeft {
+    padding-left: 0;
+}
+
+.PaddingRight {
+    padding-right: 0;
 }
 
 @media (min-width: 992px) {
-    .PaddingDiv {
-        padding-left: 10%;
-        padding-right: 10%;
+    .PaddingLeft {
+        padding-left: 8%;
+    }
+
+    .PaddingRight {
+        padding-right: 8%;
     }
 }

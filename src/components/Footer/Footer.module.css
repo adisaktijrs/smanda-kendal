@@ -1,7 +1,3 @@
-.Size {
-    max-width: 100%;
-}
-
 .Img {
     width: 70px;
     position: absolute;
@@ -17,17 +13,7 @@
 }
 
 @media (min-width: 992px) {
-    .Size {
-        max-width: 90%;
-    }
-
     .LeftMar {
         margin-left: 0px;
-    }
-
-    .Full {
-        width: 100;
-        padding-left: 0;
-        padding-right: 0;
     }
 }

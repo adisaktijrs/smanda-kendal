@@ -1,6 +1,4 @@
-.Size {
-    max-width: 100%;
-}
+
 
 .Dots {
     border-bottom: dotted 3px #24abee;
@@ -12,12 +10,6 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
-
-.Bg {
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
 .MarginTop {
@@ -51,9 +43,6 @@
 }
 
 @media (min-width: 992px) {
-    .Size {
-        max-width: 90%;
-    }
 
     .Mobile {
         text-align: left;
