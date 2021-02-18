@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
@@ -5,6 +6,10 @@ import data from "../../data/artikel";
 import sambutan from "../../data/sambutan";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "SMA Negeri 2 Kendal";
+    }, []);
+
     let articles = data.slice(0, 3).map((post) => {
         return (
             <Col sm={4} className="mt-4" key={post.id}>

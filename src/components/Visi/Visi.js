@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./Visi.module.css";
 import { visi, misi, imgs } from "../../data/visi";
 import VisiImg from "./VisiImg";
 
 const Visi = () => {
+    useEffect(() => {
+        document.title = "Visi dan Misi | SMANDA";
+    }, []);
+
     const misiList = misi.map((item) => {
         return <li key={item.id}>{item.isi}</li>;
     });

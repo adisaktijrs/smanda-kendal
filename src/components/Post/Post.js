@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, useHistory, Link } from "react-router-dom";
 import { Container, Row, Col, Breadcrumb } from "react-bootstrap";
 import { BsPencilSquare } from "react-icons/bs";
@@ -10,12 +11,21 @@ import styles from "./Post.module.css";
 const Post = () => {
     const { id } = useParams();
     const history = useHistory();
+    let selectedPost = postData.filter((post) => post.id === parseInt(id));
+
+    useEffect(() => {
+        let title = "Halaman tidak ada";
+        if (selectedPost.length !== 0) {
+            title = selectedPost[0].judul;
+        }
+        document.title = title;
+    }, [selectedPost]);
+
 
     const clickHandler = () => {
         history.push("/");
     };
 
-    let selectedPost = postData.filter((post) => post.id === parseInt(id));
     if (selectedPost.length === 0) {
         return <NotFound />;
     }
@@ -29,19 +39,23 @@ const Post = () => {
         );
     });
 
-    const beritaLain = postData.map(post => {
+    const beritaLain = postData.map((post) => {
         return (
             <li key={post.id}>
-                <Link to={`/post/${post.id}`} >{post.judul}</Link>
+                <Link to={`/post/${post.id}`}>{post.judul}</Link>
             </li>
-        )
+        );
     });
 
     return (
         <>
             <div className={`${styles.Fill}`}>
                 <img src={selectedPost[0].img} alt="post img" />
-                <h2 className={`${styles.Title} ${styles.Animated} ${styles.AnimatedFadeInUp} ${styles.FadeInUp}`}>{selectedPost[0].judul}</h2>
+                <h2
+                    className={`${styles.Title} ${styles.Animated} ${styles.AnimatedFadeInUp} ${styles.FadeInUp}`}
+                >
+                    {selectedPost[0].judul}
+                </h2>
             </div>
             <Container className={`mt-4 mb4 pb-4 mx-auto ${styles.Size}`}>
                 <Row>
@@ -66,12 +80,12 @@ const Post = () => {
 
                     <Col md={4} className="mx-auto">
                         <Breadcrumb>
-                            <Breadcrumb.Item active>Berita Lain</Breadcrumb.Item>
+                            <Breadcrumb.Item active>
+                                Berita Lain
+                            </Breadcrumb.Item>
                         </Breadcrumb>
 
-                        <ul>
-                            {beritaLain}
-                        </ul>
+                        <ul>{beritaLain}</ul>
                     </Col>
                 </Row>
             </Container>

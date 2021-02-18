@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./Profil.module.css";
 import { profil as dataProfile, imgs } from "../../data/profil";
 import ProfilParsial from "./ProfilParsial";
 
 const Profil = () => {
+    useEffect(() => {
+        document.title = "Profil | SMANDA";
+    }, []);
+
     const profilParsial = dataProfile.slice(0, 5).map((item, idx) => {
         return (
             <ProfilParsial

@@ -1,3 +1,7 @@
+# Smanda Kendal
+
+It is a project that I made in order to learn simple SPA with React-router for the first time. It's a simple redesign of my school website. I use React-bootstrap for its component library.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
