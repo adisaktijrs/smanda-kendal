@@ -57,7 +57,7 @@ const Post = () => {
                     {selectedPost[0].judul}
                 </h2>
             </div>
-            <Container className={`mt-4 mb4 pb-4 mx-auto ${styles.Size}`}>
+            <Container className={`mt-4 mb4 pb-4 mx-auto`}>
                 <Row>
                     <Col md={8} className="mx-auto">
                         <Breadcrumb>

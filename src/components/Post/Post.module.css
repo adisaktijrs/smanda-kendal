@@ -1,7 +1,3 @@
-.Size {
-    max-width: 100%;
-}
-
 .Dots {
     border-bottom: dotted 3px #24abee;
     max-width: 220px;
@@ -68,10 +64,6 @@
 }
 
 @media (min-width: 992px) {
-    .Size {
-        max-width: 90%;
-    }
-
     .Mobile {
         text-align: left;
     }
